@@ -1,10 +1,131 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .home-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            width: 80%;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .home-content img {
+            width: 40%;
+            border-radius: 10px;
+        }
+        .special-offers, .testimonials {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            width: 80%;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        button {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005f73;
+        }
+    </style>
+    <script>
+        function showAlert() {
+            alert("Button Clicked!");
+        }
+        function displayOffer() {
+            alert("Exclusive Offer: 20% off on all products!");
+        }
+    </script>
 </head>
 <body>
+    <!-- Name: Your Name, ID: Your ID -->
+    <header>
+        <h1>Welcome to Our Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
     
+    <main>
+        <section class="home-content">
+            <div>
+                <h2>Best Online Products</h2>
+                <p>Find the best products at unbeatable prices.</p>
+                <button onclick="showAlert()">Click Me</button>
+            </div>
+            <img src="fine-dining-st-augustine-25x15-WEB.jpg" alt="Product Image">
+        </section>
+        
+        <section class="special-offers">
+            <h2>Special Offers</h2>
+            <p>Get exclusive discounts on our top-selling products!</p>
+            <button onclick="displayOffer()">See Offers</button>
+        </section>
+        
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <p>"Amazing products! Highly recommended." - Jane Doe</p>
+            <p>"Fast delivery and great service." - John Smith</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Online Store. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
